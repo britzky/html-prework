@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'nav content sidebar'
+        'footer footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 150px 1fr 70px;
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+    background-image: url("../images/stars2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.hero-image {
+    background-image:url("../images/eclipse.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-text {
+    color: slateblue;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Brush Script MT, cursive;
+}
+.hobby-img {
+    width: 205px;
+    height: 210px;
+    margin: 10px 25px 10px 25px;
+    border-radius: 5px; 
+    border: 5px solid slateblue;
+    align-items: center;
+}
+.add1 {
+    display: inline-flex
+}
+
+.nav-img {
+    margin-left: 32px;
+    border: 5px solid slateblue;
+    border-radius: 5px;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+#profile-image {
+    width: 250px;
+    border: 5px solid slateblue;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+#link-image {
+    width: 100px;
+    height: 200px;
+    margin: 0;
+    border: 0;
+    padding: 0
+
+}
+
+#hobbies {
+    max-width: fit-content;
+    float: left;
+}
+
+#me {
+    padding-bottom: 15px;
+}
+
+
+
+#background, 
+#why,
+#hobbies,
+#nav,
+#profile-details,
+#me 
+{
+    background-color: slateblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px
+}
+
+
+
+footer {
+    background-color: black;
+    height: 5vh;
+    width: 100%;
+    margin-top: 0px;
+}
+
+footer div {
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: red
+}
+
+a:hover {
+    color: greenyellow
+}
+
+
